@@ -162,5 +162,5 @@ By the end of this project, you will:
 
 ---
 
-⭐ *If you like this project, give it a star on GitHub!* ⭐
+
 
