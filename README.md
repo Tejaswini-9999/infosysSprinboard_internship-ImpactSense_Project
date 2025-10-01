@@ -7,8 +7,10 @@
 
 ## 📌 Project Statement  
 
-ImpactSense aims to **predict the severity of earthquakes** based on parameters like  
-🌐 latitude, longitude | 🌊 depth | 🌋 seismic features | 🏔️ geological parameters.  
+The objective of this project is to build a machine learning-based predictive model that aims to **predict the severity of earthquakes**  in terms of magnitude, damage level, or risk zone classification. The system will utilize geophysical
+and environmental data like 🌐 latitude, longitude | 🌊 depth | 🌋 seismic features | 🏔️ geological parameters to assess
+the possible damage or categorize the earthquake severity. This can help in early disaster planning, emergency
+response, and awareness campaigns.
 
 ✅ Helps in **urban planning, risk assessment, disaster response,** and **infrastructure safety.**  
 
@@ -161,3 +163,4 @@ By the end of this project, you will:
 ---
 
 ⭐ *If you like this project, give it a star on GitHub!* ⭐
+
