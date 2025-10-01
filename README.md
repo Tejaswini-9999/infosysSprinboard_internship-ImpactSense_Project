@@ -1,189 +1,163 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# ImpactSense - Earthquake Impact Prediction
+# 🌍 ImpactSense – Earthquake Impact Prediction 🚨
 
-## Project Statement:
+> 🧠 A Machine Learning project to **predict earthquake impact** (magnitude, risk zones, and damage levels)  
+> using **geophysical and environmental data** for early disaster planning, emergency response, and awareness.  
 
-The objective of this project is to build a machine learning-based predictive model that estimates the impact of
-earthquakes in terms of magnitude, damage level, or risk zone classification. The system will utilize geophysical
-and environmental data like latitude, longitude, depth, seismic wave features, and geological parameters to assess
-the possible damage or categorize the earthquake severity. This can help in early disaster planning, emergency
-response, and awareness campaigns.
+---
 
-## Use Cases:
+## 📌 Project Statement  
 
-**Urban Risk Assessment**
+ImpactSense aims to **predict the severity of earthquakes** based on parameters like  
+🌐 latitude, longitude | 🌊 depth | 🌋 seismic features | 🏔️ geological parameters.  
 
-```
-* Description : Authorities can predict the level of impact an earthquake may cause in populated regions
-based on historical data.
-* Example : Predict which regions are at higher risk during a 5.5 magnitude earthquake using location and
-soil type.
-```
-**Infrastructure Planning**
+✅ Helps in **urban planning, risk assessment, disaster response,** and **infrastructure safety.**  
 
-```
-* Description : City planners can use the model to guide construction policies in high-risk zones.
-* Example : Predict risk level based on soil density and proximity to fault lines.
-```
-**Government Disaster Response**
+---
 
-```
-* Description : Emergency teams can prioritize regions for response and rescue based on expected impact.
-* Example : Rank areas for aid delivery after an earthquake hits, using model predictions.
-```
-**Outcomes:**
+## 🔥 Use Cases  
 
-By the end of the project, students will:
+| Use Case | Description | Example |
+|----------|-------------|---------|
+| 🏙️ **Urban Risk Assessment** | Authorities predict earthquake impact in populated areas | Predict high-risk zones during a 5.5 magnitude quake |
+| 🏗️ **Infrastructure Planning** | Guide construction policies in risky regions | Risk level based on soil density & fault lines |
+| 🚑 **Govt. Disaster Response** | Prioritize rescue & aid based on risk | Rank regions for aid delivery post-earthquake |
 
-```
-* Understand seismic data and its role in predicting earthquake impacts.
-* Preprocess and analyze geospatial and geophysical features.
-* Train and evaluate machine learning models for classification or regression of earthquake impact.
-* Optionally deploy the model using a simple user interface.
-* Document the model’s performance and results with visualizations.
-```
-## Dataset:
+---
 
-**Source:** Kaggle
+## 🎯 Outcomes  
 
-## System Architecture
-![System Architecture](images/system_architecture.png)
+By the end of this project, you will:  
+- 📊 Analyze seismic datasets & geospatial features  
+- 🛠️ Build regression/classification models  
+- 🎛️ Evaluate with metrics (Accuracy, F1, MAE, R², etc.)  
+- 🌐 Optionally deploy via **Streamlit / FastAPI UI**  
+- 📑 Document performance with **charts & visuals**  
 
+---
 
-**Modules to Be Implemented:**
+## 📂 Dataset  
 
-**1. Data Exploration and Cleaning**
+**📌 Source:** [Kaggle – Earthquake Dataset](https://www.kaggle.com/)  
 
-```
-* Load data, remove duplicates, handle missing values
-* Visualize key variables: depth, magnitude, latitude, longitude
-```
-**2. Feature Engineering**
+---
 
-```
-* Normalize or scale numeric data
-* Create geospatial clusters or add location risk score
-* Label encode categorical columns (if any)
-```
+## 🏗️ System Architecture  
 
-**3. Model Development**
+![System Architecture](images/system_architecture.png)  
 
-```
-* Train regression/classification models: Logistic Regression, Random Forest, XGBoost
-* Try advanced models for non-linear features
-```
-**4. Model Evaluation**
+---
 
-```
-* Use accuracy, MAE/MSE (for regression), F1-score (for classification)
-* Generate confusion matrix, feature importance chart
-```
-**5. User Interface (Optional)**
+## ⚙️ Modules  
 
-```
-* Build a form using Streamlit or Fast API
-* Input: magnitude, depth, region, soil type
-* Output: impact prediction or risk category
-```
-## Week-wise module implementation and high-level requirements with output screenshots
+<details>
+<summary>📍 Data Exploration & Cleaning</summary>
 
-**Milestone 1**
+- Load data, remove duplicates, handle missing values  
+- Visualize depth, magnitude, latitude, longitude  
 
-```
-- Week 1: Project Setup & Dataset Understanding
-  - Load data, explore feature distribution, map locations.
-- Week 2: Preprocessing & Feature Engineering
-  - Handle missing values, normalize and create new features.
-```
-**Milestone 2**
+</details>
 
-```
-- Week 3 : Baseline Model Training
-  - Logistic Regression, Decision Tree
-  - Basic accuracy/MAE analysis.
-- Week 4 : Advanced Model Training
-  - Random Forest, Gradient Boosting
-  - Cross-validation, hyperparameter tuning.
-```
-**Milestone 3**
+<details>
+<summary>🧩 Feature Engineering</summary>
 
-```
-- Week 5 : Evaluation & Explainability
-  - Generate confusion matrix, MAE/MSE plots
-  - Feature importance, SHAP values.
-- Week 6 : Impact Predictor UI Prototype
-  - Simple web form, input parameters → impact score or risk level.
-```
-**Milestone 4**
+- Normalize/scale data  
+- Create geospatial clusters, risk scores  
+- Encode categorical features  
 
+</details>
 
-```
-- Week 7 : Testing & Improvements
-  - Test edge cases, improve model & UI logic.
-- Week 8 : Final Report & Presentation
-  - Charts, visuals, final results, slides and PDF.
-```
-## Evaluation Criteria
+<details>
+<summary>🤖 Model Development</summary>
 
-**Completion of Milestones:**
+- Logistic Regression, Random Forest, XGBoost  
+- Experiment with non-linear models  
 
-```
-* Dataset understanding & cleaning
-* Model training and evaluation
-* UI integration (optional)
-* Documentation and final presentation
-```
-**Quality of Predictions:**
+</details>
 
-```
-* Prediction accuracy of earthquake risk or damage
-* Sensitivity to changes in key inputs
-* Realism of the predicted output
-```
-**Clarity and Presentation:**
+<details>
+<summary>📈 Model Evaluation</summary>
 
-```
-* Logical flow of the document
-* Clear explanation of the methodology
-* Visual clarity of graphs and metrics
-* Good explanation during demo
-```
-## Model Performance – Quantitative Metrics
+- Accuracy, F1-score, MAE/MSE  
+- Confusion matrix & feature importance  
 
-**Classification Metrics:**
+</details>
 
-```
-* Accuracy : Percentage of correct risk predictions
-* Precision : How many predicted "High-Risk" cases were correct
-* Recall : How many true "High-Risk" cases were captured
-* F1-Score : Balance between precision and recall
-* Confusion Matrix : True vs. predicted classes
-```
-**Regression Metrics (if predicting damage cost or scale):**
+<details>
+<summary>🖥️ User Interface (Optional)</summary>
 
-```
-* MAE (Mean Absolute Error)
-```
+- Streamlit / FastAPI form  
+- Input: magnitude, depth, soil type  
+- Output: Impact prediction or risk category  
 
-```
-* MSE (Mean Squared Error)
-* R² Score (Coefficient of Determination)
-```
-**Feature Importance:**
+</details>
 
-```
-* Highlight which features (depth, location, magnitude) influenced predictions
-* Use SHAP or feature importance chart
-```
-**Training Curves:**
+---
 
-```
-* Plot training vs validation loss and accuracy
-* Identify overfitting or underfitting
-=======
-# infosysSprinboard_internship-ImpactSense_Project
->>>>>>> c1c3cfcbae96465a773e1674353bc5a0bea922f5
-=======
-# infosysSprinboard_internship-ImpactSense_Project
->>>>>>> 5527ab4558f69f2d40e5d475167cb4f14608b712
+## 🗓️ Milestones  
+
+| Milestone | Week | Tasks | Output |
+|-----------|------|-------|--------|
+| 🚀 **M1** | 1–2 | Setup, EDA, Preprocessing | Clean data & new features |
+| ⚡ **M2** | 3–4 | Baseline & Advanced Models | Accuracy/MAE analysis |
+| 🔍 **M3** | 5–6 | Evaluation & UI Prototype | Confusion matrix, SHAP, demo UI |
+| 🏆 **M4** | 7–8 | Testing & Final Report | Final model + presentation |
+
+---
+
+## 📊 Evaluation Criteria  
+
+✔️ **Completion of milestones** (data → models → UI → docs)  
+✔️ **Prediction quality** (Accuracy, Recall, Sensitivity to inputs)  
+✔️ **Presentation** (graphs, flow, demo clarity)  
+
+---
+
+## 📈 Model Performance Metrics  
+
+**🔹 Classification Metrics**  
+- Accuracy ✅  
+- Precision 🎯  
+- Recall 🔍  
+- F1-Score ⚖️  
+- Confusion Matrix 📊  
+
+**🔹 Regression Metrics**  
+- MAE (Mean Absolute Error)  
+- MSE (Mean Squared Error)  
+- R² Score (Coefficient of Determination)  
+
+**🔹 Explainability Tools**  
+- Feature Importance 🌟  
+- SHAP values 🔬  
+
+**🔹 Training Curves**  
+- Training vs Validation 📉  
+
+---
+
+## 🛠️ Tech Stack  
+
+![Python](https://img.shields.io/badge/Python-3.9-blue?logo=python)  
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-orange?logo=scikitlearn)  
+![XGBoost](https://img.shields.io/badge/XGBoost-Boosting-red?logo=xgboost)  
+![Pandas](https://img.shields.io/badge/Pandas-Data--Analysis-teal?logo=pandas)  
+![Streamlit](https://img.shields.io/badge/Streamlit-UI-ff4b4b?logo=streamlit)  
+
+---
+
+## 📸 Screenshots / Outputs  
+
+(Add graphs, confusion matrix, SHAP plots, UI screenshots here)  
+
+---
+
+## 🎤 Final Deliverables  
+
+- 📘 Report & Documentation  
+- 📊 Charts & Visuals  
+- 🌐 Demo UI (optional)  
+- 🎥 Presentation Slides  
+
+---
+
+⭐ *If you like this project, give it a star on GitHub!* ⭐
