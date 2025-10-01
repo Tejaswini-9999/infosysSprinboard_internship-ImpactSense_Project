@@ -1,1 +1,0 @@
-# infosysSprinboard_internship-ImpactSense_Project
